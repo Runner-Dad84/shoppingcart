@@ -18,10 +18,15 @@ Product Cards
 Counter
 
 Folder Structure
--Tests
--Components
-  -Buttons
-  -Product Card
-  -Counter
--Product Cards
--Counter
+/src
+  App.css
+  App.jsx
+  index.css
+  main.js
+  /assets
+/tests
+/components
+  Buttons
+  Cart
+  Counter
+  Product Cards
