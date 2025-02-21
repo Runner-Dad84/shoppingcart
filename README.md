@@ -24,6 +24,8 @@ Folder Structure
   index.css
   main.js
   /assets
+  /routes
+    cart
 /tests
 /components
   Buttons
