@@ -26,6 +26,7 @@ Folder Structure
   /assets
   /routes
     cart
+    default
     shop
     product
 /tests
