@@ -26,6 +26,8 @@ Folder Structure
   /assets
   /routes
     cart
+    shop
+    product
 /tests
 /components
   Buttons
