@@ -9,8 +9,8 @@ const Shop = () => {
         <Productcard
           title={'Tests Image'}
           url={'www.test'}
-          alt={'water'}
-          price={"99"}
+          alt={'green goo'}
+          price={"$99"}
         >
         </Productcard>
         <Link to="/cart">Cart</Link>
