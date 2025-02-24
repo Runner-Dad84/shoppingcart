@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Productcard from '../components/producctcards.jsx'
+import Productcard from "../components/Producctcard";
 
 const Shop = () => {
     return (
@@ -7,10 +7,11 @@ const Shop = () => {
         <h1>The Shop</h1>
         <p>Items go here!</p>
         <Productcard
-        
-        
+          title={'Tests Image'}
+          url={'www.test'}
+          alt={'water'}
+          price={"99"}
         >
-
         </Productcard>
         <Link to="/cart">Cart</Link>
         <Link to="/">Return</Link>
