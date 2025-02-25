@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Productcard from "../components/Producctcard";
+import  SetAmount from "../components/Button";
 
 const Shop = () => {
     return (
@@ -13,6 +14,7 @@ const Shop = () => {
           price={"$99"}
         >
         </Productcard>
+        <SetAmount></SetAmount>
         <Link to="/cart">Cart</Link>
         <Link to="/">Return</Link>
       </div>
