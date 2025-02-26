@@ -14,7 +14,6 @@ const Shop = () => {
           price={"$99"}
         >
         </Productcard>
-        <SetAmount></SetAmount>
         <Link to="/cart">Cart</Link>
         <Link to="/">Return</Link>
       </div>
