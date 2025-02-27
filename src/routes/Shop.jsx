@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Productcard from "../components/Producctcard";
 import  SetAmount from "../components/Button";
 
-const images = [
+const data = [
 
   { title: 'Flower Truffle', id: '8499837', alt: 'chocolate truffle and rose peddles', price: '$2.19', },
   { title: 'Fruit Truffle', id: '2424469', alt: 'chocolate truffle with fruit filling', price: '$2.59', },
@@ -20,18 +20,18 @@ export const Shop = () => {
         <p>Items go here!</p>
 
         <Productcard
-          title={images[0].title}
-          id={images[0].id}
-          alt={images[0].alt}
-          price={images[0].price}
+          title={data[0].title}
+          id={data[0].id}
+          alt={data[0].alt}
+          price={data[0].price}
         >
         </Productcard>
 
         <Productcard
-          title={images[5].title}
-          id={images[5].id}
-          alt={images[5].alt}
-          price={images[5].price}
+          title={data[5].title}
+          id={data[5].id}
+          alt={data[5].alt}
+          price={data[5].price}
         >
         </Productcard>
         <Link to="/cart">Cart</Link>
