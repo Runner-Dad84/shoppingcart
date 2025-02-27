@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Productcard from "../components/Producctcard";
-import  SetAmount from "../components/Button";
 
 //raw data for each product. ID is image id from Pixabay.
 const data = [
