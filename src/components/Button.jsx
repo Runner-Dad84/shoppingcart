@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "../css-modules/productcard.module.css";
 
 
 
@@ -18,11 +19,13 @@ export default function SetAmount () {
         <div>
             <button
             onClick={()=>setCount(count + 1)}
+            className={styles.addBtn}
             >+
             </button>
             <span>{count}</span>
             <button
             onClick={()=>decrement()}
+            className={styles.subBtn}
             >-
             </button>
         </div>
