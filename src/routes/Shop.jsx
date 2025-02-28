@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Productcard from "../components/Producctcard";
+import styles from "../css-modules/productcard.module.css";
 
 //raw data for each product. ID is image id from Pixabay.
 const data = [
@@ -14,7 +15,7 @@ const data = [
 //List component uses product card to map each item.
 const List = ( {items} ) => {
   return (
-  <>
+  <div className={styles.list}>
   {items.map((item) => (
   <Productcard
     key={item.id}
@@ -25,7 +26,7 @@ const List = ( {items} ) => {
   >
   </Productcard>
   ))}
-  </>
+  </div>
   )
 }
 
@@ -34,7 +35,6 @@ export const Shop = () => {
     return (
       <div>
         <h1>The Shop</h1>
-        <p>Items go here!</p>
         <List items={data}></List>
         <Link to="/cart">Cart</Link>
         <Link to="/">Return</Link>
