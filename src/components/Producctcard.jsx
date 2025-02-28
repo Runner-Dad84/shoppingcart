@@ -39,7 +39,7 @@ export default function Productcard ({ title, alt, price, id }) {
             
 
     return (
-        <>
+        <div className={styles.item}>
          <h1 className={styles.title}>{title}</h1>
          <img src={url} alt={alt} className={styles.image}/>
          <h2>{`Price: ${price}`}</h2>
@@ -48,6 +48,6 @@ export default function Productcard ({ title, alt, price, id }) {
          onClick={add} className={styles.btn}
          >Add to Cart
         </button>
-        </>
+        </div>
     );
 }
