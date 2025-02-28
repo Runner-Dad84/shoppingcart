@@ -2,6 +2,7 @@ import  SetAmount from "./Button";
 import { useState, useEffect } from "react";
 import styles from "../css-modules/productcard.module.css";
 
+
 export default function Productcard ({ title, alt, price, id }) {
     const [url, setUrl] = useState(null);
     const [error, setError] = useState(null);
@@ -39,12 +40,12 @@ export default function Productcard ({ title, alt, price, id }) {
 
     return (
         <>
-         <h1 className="productTitle">{title}</h1>
+         <h1 className={styles.title}>{title}</h1>
          <img src={url} alt={alt} className={styles.image}/>
          <h2>{`Price: ${price}`}</h2>
          <SetAmount></SetAmount>
          <button
-         onClick={add}
+         onClick={add} className={styles.btn}
          >Add to Cart
         </button>
         </>
