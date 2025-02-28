@@ -3,6 +3,11 @@ import { useState, useEffect } from "react";
 import styles from "../css-modules/productcard.module.css";
 
 
+
+
+
+
+
 export default function Productcard ({ title, alt, price, id }) {
     const [url, setUrl] = useState(null);
     const [error, setError] = useState(null);
@@ -44,6 +49,9 @@ export default function Productcard ({ title, alt, price, id }) {
          <img src={url} alt={alt} className={styles.image}/>
          <h2>{`Price: ${price}`}</h2>
          <SetAmount></SetAmount>
+         <label>
+            <input className={styles.input}></input>
+         </label>
          <button
          onClick={add} className={styles.btn}
          >Add to Cart
