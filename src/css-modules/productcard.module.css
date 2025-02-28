@@ -9,11 +9,23 @@
     font-size: 22px;
 }
 
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+item {
+    display:flex;
+}
+
 .btn {
     font-size: 15px;
     font-weight: bold;
     border: solid black 1.5px;
     box-shadow: 2px, 2px black;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 .addBtn {
