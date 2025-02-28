@@ -39,3 +39,9 @@ item {
     font-size: 12px;
     color: red;
 }
+
+.input {
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+}
