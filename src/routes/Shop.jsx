@@ -34,7 +34,7 @@ const List = ( {items} ) => {
 export const Shop = () => {
     return (
       <div>
-        <h1>The Shop</h1>
+        <h1>The Truffle Shop</h1>
         <List items={data}></List>
         <Link to="/cart">Cart</Link>
         <Link to="/">Return</Link>
