@@ -36,8 +36,7 @@ export const Shop = () => {
       <div>
         <h1>The Truffle Shop</h1>
         <List items={data}></List>
-        <Link to="/cart">Cart</Link>
-        <Link to="/">Return</Link>
+        <Nav></Nav>
       </div>
     );
   };
