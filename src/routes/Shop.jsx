@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import Productcard from "../components/Producctcard";
 import styles from "../css-modules/productcard.module.css";
+import Nav from "../components/Nav.jsx";
 
 //raw data for each product. ID is image id from Pixabay.
 const data = [
