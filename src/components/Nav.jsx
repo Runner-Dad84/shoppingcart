@@ -16,7 +16,7 @@ export default function Nav () {
           </li>
           <li className={styles.li}>
             <span>Shopping Cart</span>
-            <span>0</span>
+            <span className={styles.cart}>0</span>
           </li>
         </ul>
       </nav>
