@@ -1,0 +1,27 @@
+.nav {
+    width: 65vw;
+    display: flex;
+    justify-content:center;
+    background: linear-gradient(to right, rgb(123, 133, 170), white);
+    flex-direction: row;
+    border: solid 2px black;
+    border-radius: 25px;
+    box-shadow: 8px 8px 10px rgb(196, 194, 194);
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+.li {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-weight: bolder;
+    border: 4px solid white;
+    border-radius: 18px;
+    padding: 1rem;
+    background: radial-gradient(rgb(185, 185, 185), white);
+}
