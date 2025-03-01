@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import styles from "../css-modules/productcard.module.css";
 
 export default function Nav () {
     return (
-    <nav>
-        <ul>
+    <nav className={styles.nav}>
+        <ul className={styles.ul}>
           <li>
             <Link to="cart">Cart</Link>
           </li>
