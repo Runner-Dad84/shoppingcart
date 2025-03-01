@@ -13,6 +13,9 @@ export default function Nav () {
                 <span>0</span>
             </button>
           </li>
+          <li>
+             <Link to="/">Return</Link>
+          </li>
         </ul>
       </nav>
     )
