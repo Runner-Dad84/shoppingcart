@@ -9,13 +9,14 @@ export default function Nav () {
             <Link to="cart">Cart</Link>
           </li>
           <li className={styles.li}>
-           
                 <Link to="shop">Shop Now</Link>
-                <span>0</span>
-         
           </li>
           <li className={styles.li}>
              <Link to="/">Return</Link>
+          </li>
+          <li className={styles.li}>
+            <span>Shopping Cart</span>
+            <span>0</span>
           </li>
         </ul>
       </nav>
