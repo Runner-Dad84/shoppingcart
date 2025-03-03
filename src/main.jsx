@@ -11,11 +11,13 @@ import Shop from './routes/Shop.jsx'
 import Cart from './routes/Cart.jsx'
 import Product from './routes/Cart.jsx'
 
+//If there is an error on any children navigate back to home page '/'
 function ErrorRedirect () {
   const navigate = useNavigate();
   useEffect (()=> {
     navigate('/');
   }, [navigate])
+  return null;
 };
 
 
