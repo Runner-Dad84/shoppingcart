@@ -3,11 +3,6 @@ import { useState, useEffect } from "react";
 import styles from "../css-modules/productcard.module.css";
 
 
-
-
-
-
-
 export default function Productcard ({ title, alt, price, id }) {
     const [url, setUrl] = useState(null);
     const [error, setError] = useState(null);
