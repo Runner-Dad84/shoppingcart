@@ -5,14 +5,11 @@ export default function Nav () {
     return (
     <nav className={styles.nav}>
         <ul className={styles.ul}>
-          <li className={styles.li}>
-            <Link to="cart">Cart</Link>
+        <li className={styles.li}>
+             <Link to="/">Home</Link>
           </li>
           <li className={styles.li}>
                 <Link to="shop">Shop Now</Link>
-          </li>
-          <li className={styles.li}>
-             <Link to="/">Return</Link>
           </li>
           <li className={styles.li}>
             <span>Shopping Cart</span>
