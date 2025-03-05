@@ -15,7 +15,7 @@
 }
 
 .item {
-    display:flex;
+    display:block;
 }
 
 .btn {
