@@ -2,7 +2,7 @@ import { createContext, useState} from 'react';
 
 export const CountContext = createContext();
 
-export function CountProvided ( { props }) {
+export function CountProvider ( { props }) {
     const [total, setTotal] = useState(0);
 
     return (
