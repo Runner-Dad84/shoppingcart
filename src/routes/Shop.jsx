@@ -36,8 +36,8 @@ export const Shop = () => {
     return (
       <div>
         <h1>The Truffle Shop</h1>
-        <List items={data}></List>
         <CountProvider>
+          <List items={data}></List>
           <Nav></Nav>
       </CountProvider>
       </div>
