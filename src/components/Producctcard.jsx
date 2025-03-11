@@ -6,11 +6,6 @@ import styles from "../css-modules/productcard.module.css";
 export default function Productcard ({ title, alt, price, id }) {
     const [url, setUrl] = useState(null);
     const [error, setError] = useState(null);
-    
-    function add () {
-        console.log('added to cart')
-    }
-
 
     useEffect(() => {
     const fetchImage = async ()=> {
@@ -37,7 +32,6 @@ export default function Productcard ({ title, alt, price, id }) {
         }, []
     )
             
-
     return (
         <div className={styles.item}>
          <h1 className={styles.title}>{title}</h1>
