@@ -44,9 +44,6 @@ export default function Productcard ({ title, alt, price, id }) {
          <img src={url} alt={alt} className={styles.image}/>
          <h2>{`Price: ${price}`}</h2>
             <SetAmount></SetAmount>
-         <label>
-            <input className={styles.input}></input>
-         </label>
         </div>
     );
 }
