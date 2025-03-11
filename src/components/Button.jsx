@@ -56,7 +56,9 @@ export default function SetAmount () {
                   min='0'
                   placeholder='0'
                   value={countOne}
-                  onChange={(e)=>{setInput(e.target.value); setCountOne(e.target.value)}}
+                  onChange={(e)=>{
+                    const val = e.target.value;
+                    setInput(Number(val)); setCountOne(Number(val))}}
                 />
               </label>
               <button
