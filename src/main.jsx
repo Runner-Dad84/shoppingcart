@@ -10,6 +10,7 @@ import App from './App.jsx'
 import Shop from './routes/Shop.jsx'
 import Cart from './routes/Cart.jsx'
 import Product from './routes/Cart.jsx'
+import { CountProvider } from "./components/Counter.jsx";
 
 //If there is an error on any children navigate back to home page '/'
 function ErrorRedirect () {
@@ -46,6 +47,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+     <CountProvider>
+       <RouterProvider router={router} />
+    </CountProvider>
   </StrictMode>
 );
