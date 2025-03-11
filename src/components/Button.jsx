@@ -24,17 +24,11 @@ export default function SetAmount () {
     function increment () {
         setCountOne(countOne + 1);
     };
-    /*
-    const handleInput = (event) => {
-        const inputVal = setInput(event.target.value);
-        console.log('test')
-    };
-    */
+   
    function addtoCart () {
     setCount(count + countOne);
     setCountOne(0);
    }
-
 
     return (
         <div>
