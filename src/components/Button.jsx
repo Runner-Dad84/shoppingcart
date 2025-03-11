@@ -11,16 +11,15 @@ export default function SetAmount () {
     const context= useContext(CountContext);
     const { count, setCount } = context;
 
-    /*decrement handler min of 0 */
+    /*button decrement handler min of 0 */
     function decrement () {
         if (countOne > 0) {
             setCountOne(countOne - 1)
         } else {
             setCountOne(0);
         }
-        
     };
-
+    /*button inrement handler*/
     function increment () {
         setCountOne(countOne + 1);
     };
@@ -55,6 +54,7 @@ export default function SetAmount () {
                     setInput(Number(val)); setCountOne(Number(val))}}
                 />
               </label>
+              {/*add item count to cart */}
               <button
                 className={styles.btn}
                 onClick={addtoCart}
