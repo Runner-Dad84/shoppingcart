@@ -15,9 +15,6 @@ export default function SetAmount () {
     function decrement () {
         if (countOne > 0) {
             setCountOne(countOne - 1)
-            setCount(count - 1)
-            console.log(count)
-
         } else {
             setCountOne(0);
         }
@@ -26,8 +23,6 @@ export default function SetAmount () {
 
     function increment () {
         setCountOne(countOne + 1);
-        setCount(count + 1)
-        console.log(count)
     };
     /*
     const handleInput = (event) => {
@@ -36,6 +31,7 @@ export default function SetAmount () {
     };
     */
    function addtoCart () {
+    setCount(count + countOne)
     console.log('add to cart')
    }
 
