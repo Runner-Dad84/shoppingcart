@@ -1,7 +1,6 @@
 import Productcard from "../components/Producctcard";
 import styles from "../css-modules/productcard.module.css";
 import Nav from "../components/Nav.jsx";
-import { CountProvider } from "../components/Counter.jsx";
 
 //raw data for each product. ID is image id from Pixabay.
 const data = [
@@ -36,10 +35,8 @@ export const Shop = () => {
     return (
       <div>
         <h1>The Truffle Shop</h1>
-        <CountProvider>
-          <List items={data}></List>
-          <Nav></Nav>
-      </CountProvider>
+        <List items={data}></List>
+        <Nav></Nav>
       </div>
     );
   };
