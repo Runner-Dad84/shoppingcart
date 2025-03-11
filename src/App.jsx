@@ -6,10 +6,7 @@ export default function App () {
   return (
     <div>
       <h1>Welcome to the Sweetest E-Store On Earth</h1>
-      <CountProvider>
           <Nav></Nav>
-      </CountProvider>
-      
     </div>
   );
 };
