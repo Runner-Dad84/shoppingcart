@@ -54,7 +54,7 @@ export default function SetAmount () {
                   className={styles.input}
                   type="number"
                   min='0'
-                  placeholder={countOne}
+                  placeholder='0'
                   onChange={(e)=>{setInput(e.target.value); setCountOne(e.target.value)}}
                 />
               </label>
