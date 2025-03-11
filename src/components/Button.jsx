@@ -31,8 +31,8 @@ export default function SetAmount () {
     };
     */
    function addtoCart () {
-    setCount(count + countOne)
-    console.log('add to cart')
+    setCount(count + countOne);
+    setCountOne(0);
    }
 
 
