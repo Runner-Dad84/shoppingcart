@@ -35,6 +35,11 @@ export default function SetAmount () {
         console.log('test')
     };
     */
+   function addtoCart () {
+    console.log('add to cart')
+   }
+
+
     return (
         <div>
             <button
@@ -57,6 +62,11 @@ export default function SetAmount () {
                   onChange={(e)=>{setInput(e.target.value); setCountOne(e.target.value)}}
                 />
               </label>
+              <button
+                className={styles.btn}
+                onClick={addtoCart}
+                >Add to Cart
+              </button>
         </div>
 
     )

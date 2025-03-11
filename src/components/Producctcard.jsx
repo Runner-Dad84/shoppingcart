@@ -47,11 +47,6 @@ export default function Productcard ({ title, alt, price, id }) {
          <label>
             <input className={styles.input}></input>
          </label>
-         <button
-         className={styles.btn}
-         onClick={add}
-         >Add to Cart
-        </button>
         </div>
     );
 }
