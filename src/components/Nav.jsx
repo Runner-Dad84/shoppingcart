@@ -26,6 +26,13 @@ export default function Nav () {
             <span>Shopping Cart</span>
             <span className={styles.cart}>{count}</span>
           </li>
+          <li className={styles.li}>
+            <button
+            onClick={()=> setCount(0)}
+            >Empty Cart</button>
+
+          </li>
+
         </ul>
     </nav>
     )
