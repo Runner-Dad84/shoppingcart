@@ -43,12 +43,13 @@ export default function Productcard ({ title, alt, price, id }) {
          <h1 className={styles.title}>{title}</h1>
          <img src={url} alt={alt} className={styles.image}/>
          <h2>{`Price: ${price}`}</h2>
-         <SetAmount></SetAmount>
+            <SetAmount></SetAmount>
          <label>
             <input className={styles.input}></input>
          </label>
          <button
-         onClick={add} className={styles.btn}
+         className={styles.btn}
+         onClick={add}
          >Add to Cart
         </button>
         </div>
