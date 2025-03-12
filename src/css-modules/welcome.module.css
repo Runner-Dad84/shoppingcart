@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.welcomeImg {
+    width: 45vw;
+    height: 45vh;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 1em;
+    background-image: url('/images/chocolates.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 8px 8px 10px rgb(196, 194, 194);
+}
