@@ -28,6 +28,7 @@ export default function Nav () {
           </li>
           <li className={styles.li}>
             <button
+            className={styles.emptyBtn}
             onClick={()=> setCount(0)}
             >Empty Cart</button>
 
