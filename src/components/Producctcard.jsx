@@ -14,11 +14,8 @@ export default function Productcard ({ title, alt, price, id }) {
             const proxyURL = 'https://corsproxy.io/?';
             const targetAPI = `http://pixabay.com/api/?key=${apiKey}&id=${id}`;
             const response = await fetch (proxyURL + targetAPI);
-
             const data = await response.json();
-            console.log(data);
             
-
             if ( data.hits && data.hits.length > 0 ){
                 setUrl(data.hits[0].largeImageURL);
                 console.log(data.hits[0].largeImageURL);
