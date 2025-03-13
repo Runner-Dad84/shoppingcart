@@ -2,7 +2,7 @@
     width: 65vw;
     display: flex;
     justify-content:center;
-    background: linear-gradient(to right, rgb(123, 133, 170), white);
+    background: linear-gradient(rgb(123, 133, 170), white);
     flex-direction: row;
     border: solid 2px black;
     border-radius: 25px;
