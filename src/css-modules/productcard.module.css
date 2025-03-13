@@ -16,6 +16,11 @@
 
 .item {
     display:block;
+    border: 2px solid black; 
+    border-radius: 8px;
+    box-shadow: 8px 8px 10px rgb(196, 194, 194);
+    background: linear-gradient(rgb(123, 133, 170), white);
+    margin: 5px;
 }
 
 .btn {
