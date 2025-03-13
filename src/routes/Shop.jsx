@@ -35,8 +35,10 @@ export const Shop = () => {
     return (
       <div>
         <h1>The Truffle Shop</h1>
-        <List items={data}></List>
-        <Nav></Nav>
+        <div className={styles.shop}>
+          <List items={data}></List>
+          <Nav></Nav>
+          </div>
       </div>
     );
   };
