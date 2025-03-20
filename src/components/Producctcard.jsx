@@ -1,40 +1,35 @@
 import  SetAmount from "./Button";
 import { useState, useEffect } from "react";
 import styles from "../css-modules/productcard.module.css";
+import fetchData from "./FetchData.jsx";
 
 
-export default function Productcard ({ title, alt, price, id }) {
-    const [url, setUrl] = useState(null);
-    const [error, setError] = useState(null);
+function Productcard ({ title, alt, price, id }) {
+    const [imageUrl, setImageUrl] = useState(null);
+    const [error, setError] = useState('');
 
-    useEffect(() => {
-    const fetchImage = async ()=> {
-        try {
-            const apiKey = '47983806-5d69dad02fddea8f4141376c1';
-            const proxyURL = 'https://corsproxy.io/?';
-            const targetAPI = `http://pixabay.com/api/?key=${apiKey}&id=${id}`;
-            const response = await fetch (proxyURL + targetAPI);
-            const data = await response.json();
-            
-            if ( data.hits && data.hits.length > 0 ){
-                setUrl(data.hits[0].largeImageURL);
-                console.log(data.hits[0].largeImageURL);
-            } else {
-                throw new Error ('image not found');
+    useEffect(()=> {
+        async function getImage () {
+            try {
+                const url = await fetchData(id);
+                setImageUrl(url);
+            } catch(err) {
+                setError(err.message)
             }
-            } catch (err) {
-                setError(err.message);
-            }}
-            fetchImage();
-        }, []
-    )
-            
+        }
+
+        getImage();
+    }, [id]);
+
+   //Product card with title, image and cost. Set Amount are buttons.
     return (
         <div className={styles.item}>
          <h1 className={styles.title}>{title}</h1>
-         <img src={url} alt={alt} className={styles.image}/>
+         <img src={imageUrl} alt={alt} className={styles.image}/>
          <h2>{`Price: ${price}`}</h2>
             <SetAmount></SetAmount>
         </div>
     );
 }
+
+export default Productcard
