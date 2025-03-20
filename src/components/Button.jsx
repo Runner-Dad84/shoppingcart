@@ -36,7 +36,7 @@ export default function SetAmount () {
             className={styles.addBtn}
             >+
             </button>
-            <span>{countOne}</span>
+            <span data-testid='itemValue'>{countOne}</span>
             <button
             onClick={()=>decrement()}
             className={styles.subBtn}
