@@ -34,6 +34,7 @@ export default function SetAmount () {
             <button
             onClick={()=>increment()}
             className={styles.addBtn}
+            data-testid='plus'
             >+
             </button>
             <span data-testid='itemValue'>{countOne}</span>
